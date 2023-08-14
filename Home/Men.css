@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: auto;
+}
+
+#upper {
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+#topBar{
+    width: 80%;
+    margin: auto;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#topBar-left{
+    width: 28%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 2px;
+}
+#topBar-right{
+    width: 11%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 2px;
+}
+@media screen and (max-width:800px) {
+    #topBar{
+        display: none;
+    }
+}
+
+#mainHeader{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#mainHeader-left{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#mainHeader-left >div:nth-child(1){
+    display: none;
+}
+@media screen and (max-width:800px){
+    #mainHeader-left >div:nth-child(1){
+        display: inline;
+    }
+    #mainHeader-left>div:nth-child(2),p{
+        display: none;
+    }
+}
+.pad-15{
+    padding-top: 15px;
+}
+#mainHeader-right{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#search-bar{
+    width: 55%;
+    height: 40px;
+    padding-left: 5px;
+    background-color: rgba(234,234,234,255);
+    margin-top: 5px;
+    border-radius: 5px;
+}   
+#mainHeader-right>div:nth-child(1){
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    #mainHeader-right>div:nth-child(1){
+        display: contents;
+    }
+    #mainHeader-right{
+        width: 20%;
+    }
+    #search-bar{
+        display: none;
+    }
+    #mainHeader-right>div:nth-child(3){
+        display: none;
+    }
+    #mainHeader-right>div:nth-child(4){
+        display: none;
+    }
+    #mainHeader-right>div:nth-child(5){
+        display: none;
+    }
+    #mainHeader-right>div:nth-child(6){
+        display: none;
+    }
+}
+
+#middle {
+    width: 100%;
+    height: auto;
+}
+#slidebar{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+#slidebar div{
+    width: 32.5%;
+    height: 500px;
+}
+#slidebar img{
+    width: 100%;
+    height: 100%;
+}
+
+#ad-img{
+    /* border: solid black; */
+    width:70%;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+#ad-img div{
+    /* border: solid black; */
+    width:9%;
+    height: 180px;
+    
+}
+#ad-img img{
+    width: 100%;
+    height: 70%;
+}
+#ad-img p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#trend-cat{
+    width: 100%;
+    height: 750px;
+}
+.tc-img{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tc-img div{
+    width: 16.5%;
+    height: 350px;
+}
+.tc-img img{
+    width: 100%;
+    height: 100%;
+}
+#ad{
+    display: flex;
+}
+#ad div{
+    height: 400px;
+    width: 50%;
+}
+#ad img{
+    width: 100%;
+    height: 100%;
+}
+.to-missed{
+    width: 100%;
+    height: 880px;
+}
+.tomissed-img{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tomissed-img div{
+    margin-top: 10px;
+    width: 49%;
+    height: 410px;
+}
+.tomissed-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#lower {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+#info{
+    width: 70%;
+    height: 500px;
+    margin: auto;
+}
+#info-header{
+    padding-top: 80px;
+    display: flex;
+    color: rgb(244, 215, 73);
+}
+#info-header p{
+    border: 2px solid rgb(244, 215, 73);
+    width:10px;
+    border-radius: 50%;
+    text-align: center;
+    height: 8px;
+    font-size: 5px;
+}
+#info-footer{
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+.footer-box{
+    width: 25%;
+    height: 150px;
+}
+
+h5{
+color: rgb(244, 215, 73);
+}
+#info-footer p{
+    color: white;
+    font-size: 13px;
+}
+.fbox-head{
+    margin-top: 10px;
+}
+.fbox-mid{
+    padding-top: 20px;
+}
+#info-last{
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+}
+.last-box{
+    width: 25%;
+    height: 200px;
+}
+.last-box div{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
