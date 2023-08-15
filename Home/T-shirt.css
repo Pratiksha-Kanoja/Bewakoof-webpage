@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: auto;
+}
+
+#upper {
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+#topBar {
+    width: 80%;
+    margin: auto;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#topBar-left {
+    width: 28%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+#topBar-right {
+    width: 11%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+#mainHeader {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#mainHeader-left {
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainHeader-left>div:nth-child(1) {
+    display: none;
+}
+
+.pad-15 {
+    padding-top: 15px;
+}
+
+#mainHeader-right {
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-bar {
+    width: 55%;
+    height: 40px;
+    padding-left: 5px;
+    background-color: rgba(234, 234, 234, 255);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#mainHeader-right>div:nth-child(1) {
+    display: none;
+}
+
+#middle {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+#middle-nav {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+}
+
+#middle-nav>p {
+    margin: 0px 5px;
+    font-size: 15px;
+}
+
+#middle>div:nth-child(2) {
+    width: 100%;
+    height: 60px;
+    font-size: 27px;
+}
+
+#middle>div:nth-child(2)>div {
+    display: flex;
+}
+
+#middle>div:nth-child(2)>div>p:nth-child(2) {
+    margin-left: 10px;
+}
+
+#middle>div:nth-child(2)>hr {
+    margin-left: 3px;
+    width: 9%;
+    border: 1px solid rgba(255, 191, 0, 0.975);
+    font-size: 28px;
+}
+
+#middle>div:nth-child(3) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+
+#middle>div:nth-child(3)>div:nth-child(1) {
+    width: 23%;
+    height: 600px;
+    border: 2px solid red;
+}
+
+#middle>div:nth-child(3)>div:nth-child(1)>p {
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 20px;
+
+}
+
+#filter {
+    height: 600px;
+}
+
+#filter>div {
+    height: 35px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin: 10px 0px;
+}
+
+#popular {
+    width: 73%;
+    height: auto;
+    border: 2px solid blue;
+}
+
+#popular>div:nth-child(1) {
+    width: 16%;
+    display: flex;
+    margin-left: 83%;
+}
+
+#popular>div>p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+#popular>div:nth-child(2) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popular-img {
+    width: 32%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.popular-img>div:nth-child(1) {
+    width: 100%;
+    height: 70%;
+}
+
+.popular-img>div:nth-child(2) {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.popular-img>div:nth-child(2)>div:nth-child(1) {
+    width: 90%;
+    height: 100%;
+}
+
+.popular-img>div:nth-child(2)>div:nth-child(1)>div {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.popular-img>div:nth-child(2)>div:nth-child(1)>p {
+    font-size: 14px;
+}
+
+.popular-img>div:nth-child(2)>div:nth-child(2) {
+    width: 10%;
+    height: 100%;
+}
+
+.popular-img>div:nth-child(2)>div:nth-child(2)>i {
+    margin-top: 5px;
+}
+
+.popular-img>div:nth-child(3) {
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+
+.popular-img>div:nth-child(3)>p:nth-child(2) {
+    text-decoration: line-through;
+    margin-left: 6px;
+    font-size: 11px;
+    margin-top: 3px;
+    color: gray;
+}
+
+.popular-img>div:nth-child(4)>p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.popular-img>div:nth-child(5) {
+    width: 35%;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 3px;
+}
