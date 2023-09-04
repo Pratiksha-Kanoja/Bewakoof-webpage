@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#container {
+    width: 100%;
+    height: auto;
+}
+
+#upper {
+    width: 100%;
+    height: 130px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+#topBar{
+    width: 80%;
+    margin: auto;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#topBar-left{
+    width: 28%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 2px;
+}
+#topBar-right{
+    width: 11%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 2px;
+}
+@media screen and (max-width:800px) {
+    #topBar{
+        display: none;
+    }
+}
+
+#mainHeader{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#mainHeader-left{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#mainHeader-left >div:nth-child(1){
+    display: none;
+}
+@media screen and (max-width:800px){
+    #mainHeader-left >div:nth-child(1){
+        display: inline;
+    }
+    #mainHeader-left>div:nth-child(2),p{
+        display: none;
+    }
+}
+.pad-15{
+    padding-top: 15px;
+}
+#mainHeader-right{
+    width: 35%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#search-bar{
+    width: 58%;
+    height: 40px;
+    background-color: rgba(234,234,234,255);
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-left: 80px;
+    padding-left: 10px;
+}   
+#mainHeader-right>div:nth-child(1){
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    #mainHeader-right>div:nth-child(1){
+        display: contents;
+    }
+    #mainHeader-right{
+        width: 20%;
+    }
+    #search-bar{
+        display: none;
+    }
+    #mainHeader-right>div:nth-child(3){
+        display: none;
+    }
+    #mainHeader-right>div:nth-child(4){
+        display: none;
+    }
+    #mainHeader-right>div:nth-child(5){
+        display: none;
+    }
+    #mainHeader-right>div:nth-child(6){
+        display: none;
+    }
+}
+
+#main-body{
+    width: 100%;
+    height: 640px;
+    display: flex;
+}
+#mainbody-left{
+    width: 50%;
+    height: 640px;
+    background-image: linear-gradient(to bottom,white,#fff4c6);
+}
+#mainbody-left>div:nth-child(1){
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 30px;
+}
+#mainbody-left>div:nth-child(1)>p:nth-child(2){
+    font-size: 20px;
+}
+#mainbody-left>div:nth-child(2){
+    width: 95%;
+    margin: auto;
+    height: 350px;
+    margin-top: 180px;
+}
+#mainbody-left>div:nth-child(2)>img{
+    width: 100%;
+    height: 100%;
+}
+#mainbody-right{
+    width: 50%;
+    height: 640px;
+}
+#mainbody-right>div:nth-child(1){
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+#mainbody-right>div:nth-child(1)>p:nth-child(1){
+    font-size: 30px;
+    font-weight: bold;
+}
+#mainbody-right>div:nth-child(1)>p:nth-child(2){
+    font-size: 22px;
+    color: gray;
+    margin-top: 20px;
+}
+#mainbody-right>div:nth-child(2){
+    width: 60%;
+    height: 60px;
+    margin: auto;
+    border: 1px solid  rgb(210, 210, 210);
+    text-align: center;
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+#mainbody-right>div:nth-child(2)>div{
+    width: 18%;
+    height: 45px;
+    margin-top: 7px;
+    margin-left: 10px;
+    display: flex;
+    background-color: rgb(210, 210, 210);
+}
+#mainbody-right>div:nth-child(2)>div>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-right: 3px;
+    margin-left: 4px;
+}
+#mainbody-right>div:nth-child(2)>div>p{
+    margin-top: 13px;
+    margin-right: 3px;
+
+}
+#mainbody-right>div:nth-child(2)>div>i{
+    margin-top: 10px;
+}
+#mainbody-right>div:nth-child(2)>input{
+    width: 75%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+}
+#mainbody-right>div:nth-child(3){
+    width: 60%;
+    height: 60px;
+    margin: auto;
+    border: 1px solid  rgb(210, 210, 210);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#mainbody-right>div:nth-child(3)>button{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #42a2a2;
+    font-size: 25px;
+    color: white;
+}
+fieldset{
+    border: none;
+    border-top: 1px solid gray;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+#mainbody-right>div:nth-child(5){
+    width: 55%;
+    height: 40px;
+    margin: auto;
+    border: 1px solid  rgb(210, 210, 210);
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#mainbody-right>div:nth-child(5)>i{
+    margin-top: 6px;
+    margin-left: 80px;
+}
+#mainbody-right>div:nth-child(5)>P{
+    margin-top: 10px;
+    margin-right: 80px;
+}
+#mainbody-right>div:nth-child(6){
+    width: 55%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#mainbody-right>div:nth-child(6)>div:nth-child(1){
+    border: 1px solid  rgb(210, 210, 210);
+    width: 47%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+#mainbody-right>div:nth-child(6)>div:nth-child(1)>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 40px;
+}
+#mainbody-right>div:nth-child(6)>div:nth-child(1)>p{
+    margin-top: 8px;
+    margin-right: 40px;
+}
+#mainbody-right>div:nth-child(6)>div:nth-child(2){
+    border: 1px solid  rgb(210, 210, 210);
+    width: 47%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#mainbody-right>div:nth-child(6)>div:nth-child(2)>i{
+    margin-top: 6px;
+    margin-left: 35px;
+}
+#mainbody-right>div:nth-child(6)>div:nth-child(2)>p{
+    margin-top: 8px;
+    margin-right: 35px;
+}
+#mainbody-right>div:nth-child(7){
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+}
+#mainbody-right>div:nth-child(7)>p{
+    color: gray;
+}
+
+#mainbody-right>div:nth-child(7)>div{
+    display: flex;
+}
